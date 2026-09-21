@@ -14,7 +14,7 @@ module fifo_rtl( input clk,
     reg [3:0] read_pointer;
     reg[4:0] counter;
     assign empty=(counter==5'd0);
-    assign full=(counter==5'd15);
+    assign full=(counter==5'd16);
     always @(posedge clk)
     begin
         if(reset)
